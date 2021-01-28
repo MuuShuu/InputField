@@ -16,3 +16,15 @@ select.addEventListener('change', function(event){
     const newElement = document.getElementById('colorNow');
     newElement.innerHTML = selectColor;
 });
+
+const box = document.getElementById('checkbox');
+
+box.addEventListener('change', function(event){
+    const check = event.target.checked
+    const span = document.getElementById('span')
+    if (check) {
+        span.innerHTML = 'Checked'
+    } else {
+        span.innerHTML = 'Not checked'
+    }
+});
