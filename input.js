@@ -11,8 +11,8 @@ btn.addEventListener('click', function() {
 
 const select = document.getElementById('select')
 
-select.addEventListener('change', function(){
-    const selectColor = select.options[select.selectedIndex].value
+select.addEventListener('change', function(event){
+    const selectColor = event.target.value
     const newElement = document.getElementById('colorNow');
     newElement.innerHTML = selectColor;
 });
